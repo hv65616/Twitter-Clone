@@ -9,11 +9,11 @@ import MessageIcon from "@mui/icons-material/Message";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import PersonIcon from "@mui/icons-material/Person";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-
+import Button from "@mui/material/Button";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <TwitterIcon></TwitterIcon>
+      <TwitterIcon className="sidebar__twitterIcon"></TwitterIcon>
       <SidebarOption Icon={HomeIcon} text="Home"></SidebarOption>
       <SidebarOption Icon={SearchIcon} text="Search"></SidebarOption>
       <SidebarOption
@@ -24,6 +24,9 @@ function Sidebar() {
       <SidebarOption Icon={BookmarkIcon} text="Bookmark"></SidebarOption>
       <SidebarOption Icon={PersonIcon} text="Person"></SidebarOption>
       <SidebarOption Icon={MoreHorizIcon} text="More"></SidebarOption>
+      <Button variant="outlined" className="sidebar__tweet" >
+        Tweet
+      </Button>
     </div>
   );
 }
