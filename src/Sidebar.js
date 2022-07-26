@@ -24,7 +24,7 @@ function Sidebar() {
       <SidebarOption Icon={BookmarkIcon} text="Bookmark"></SidebarOption>
       <SidebarOption Icon={PersonIcon} text="Person"></SidebarOption>
       <SidebarOption Icon={MoreHorizIcon} text="More"></SidebarOption>
-      <Button variant="outlined" className="sidebar__tweet" >
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
     </div>
